@@ -1,14 +1,11 @@
-import React,{useState,useEffect} from 'react'
-import Navbar from '../Components/Navbar'
-import axios from 'axios';
-
+import React, { useState, useEffect } from "react";
+import Navbar from "../Components/Navbar";
+import axios from "axios";
 
 const About = () => {
-
-    const [text, setText] = useState(null);
+  const [text, setText] = useState(null);
 
   const handleClose = () => {
-    // Close the current window or tab
     window.close();
   };
 
@@ -24,7 +21,6 @@ const About = () => {
     };
     fetchdata();
   }, []);
-
 
   return (
     <div className="bg-[url('./images/geiranger.jpg')] bg-cover bg-center bg-fixed min-h-screen">
@@ -52,7 +48,7 @@ const About = () => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

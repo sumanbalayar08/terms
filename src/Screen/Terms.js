@@ -6,7 +6,7 @@ const Terms = () => {
   const [text, setText] = useState(null);
 
   const handleClose = () => {
-    // Close the current window or tab
+    //console.log('dfd')
     window.close();
   };
 

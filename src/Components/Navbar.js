@@ -19,10 +19,10 @@ const Navbar = () => {
 
         <ul className="hidden lg:flex items-center justify-center space-x-6 font-bold">
           <li className="cursor-pointer hover:text-gray-300">Home</li>
-          <li>Order</li>
-          <li>Our Customers</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li className="cursor-pointer hover:text-gray-300">Order</li>
+          <li className="cursor-pointer hover:text-gray-300">Our Customers</li>
+          <li className="cursor-pointer hover:text-gray-300">About Us</li>
+          <li className="cursor-pointer hover:text-gray-300">Contact Us</li>
           <button className="flex items-center justify-center space-x-4">
             <span>English</span>
             <img src={image2} alt="British Flag" className="w-6 h-6" />
