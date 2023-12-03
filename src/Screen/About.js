@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import Navbar from "../Components/Navbar";
+import React,{useState,useEffect} from 'react'
+import Navbar from '../Components/Navbar'
+import axios from 'axios';
 
-const Terms = () => {
-  const [text, setText] = useState(null);
+
+const About = () => {
+
+    const [text, setText] = useState(null);
 
   const handleClose = () => {
     // Close the current window or tab
@@ -14,14 +16,15 @@ const Terms = () => {
     const fetchdata = async () => {
       try {
         const res = await axios.get("http://127.0.0.1:8000/api/teachers/");
-        setText(res.data.teachers[0].content);
-        console.log(res.data.teachers[0].content);
+        setText(res.data.teachers[1].content);
+        console.log(res.data.teachers[1].content);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
     fetchdata();
   }, []);
+
 
   return (
     <div className="bg-[url('./images/geiranger.jpg')] bg-cover bg-center bg-fixed min-h-screen">
@@ -32,7 +35,7 @@ const Terms = () => {
         </h1>
         <div className="flex items-center justify-center font-bold text-lg">
           <button
-            className="text-white bg-green-700 rounded-full px-8 py-3"
+            className="text-white bg-green-600 rounded-full px-8 py-3"
             onClick={handleClose}
           >
             Close and Go Back
@@ -47,18 +50,9 @@ const Terms = () => {
             Database Not Active
           </p>
         )}
-
-        <div className="flex items-center justify-center font-bold text-lg">
-          <button
-            className="text-white bg-green-700 rounded-full px-8 py-3"
-            onClick={handleClose}
-          >
-            Close and Go Back
-          </button>
-        </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Terms;
+export default About

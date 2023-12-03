@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-black text-white w-full ">
+    <div className="text-white w-full ">
       <div className="relative flex lg:justify-evenly justify-end py-6 items-center px-[8%]">
         <div className="hidden lg:block">
           <img src={image1} alt="Company Logo" className="w-10 h-8" />
