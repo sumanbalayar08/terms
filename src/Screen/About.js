@@ -43,7 +43,7 @@ const About = () => {
           </p>
         ) : (
           <p className="flex items-center justify-center text-black bg-white rounded-2xl mx-[20%] px-8 py-6 font-serif">
-            Database Not Active
+            Server Not Active
           </p>
         )}
       </div>
