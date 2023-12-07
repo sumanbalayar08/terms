@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import image1 from "../images/diamond.png";
 import image2 from "../images/GB.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, settoggle] = useState(false);
