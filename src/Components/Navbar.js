@@ -21,7 +21,9 @@ const Navbar = () => {
           <li className="cursor-pointer hover:text-gray-300">Home</li>
           <li className="cursor-pointer hover:text-gray-300">Order</li>
           <li className="cursor-pointer hover:text-gray-300">Our Customers</li>
+          <Link to='/about'>
           <li className="cursor-pointer hover:text-gray-300">About Us</li>
+          </Link>
           <li className="cursor-pointer hover:text-gray-300">Contact Us</li>
           <button className="flex items-center justify-center space-x-4">
             <span>English</span>
