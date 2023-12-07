@@ -27,7 +27,7 @@ const About = () => {
       <Navbar />
       <div className="flex-1 py-[4%] space-y-6">
         <h1 className="flex items-center justify-center text-white font-bold text-2xl">
-          Terms
+          About Us
         </h1>
         <div className="flex items-center justify-center font-bold text-lg">
           <button
