@@ -47,7 +47,9 @@ const Navbar = () => {
           <li className="flex items-center justify-center">Our Customers</li>
           <hr className="border-black" />
 
-          <li className="flex items-center justify-center">About Us</li>
+          <Link className="flex items-center justify-center" to='/about'>
+          <li >About Us</li>
+          </Link>
           <hr className="border-black" />
         </ul>
 
