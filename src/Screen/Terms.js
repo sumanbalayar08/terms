@@ -14,9 +14,9 @@ const Terms = () => {
     const fetchdata = async () => {
       try {
         console.log("dfdf")
-        const res = await axios.get("http://127.0.0.1:8000/api/teachers/");
-        setText(res.data.teachers[0].content);
-        console.log(res.data.teachers[0].content);
+        const res = await axios.get("http://127.0.0.1:8000/api/info/");
+        setText(res.data.infos[0].content);
+        console.log(res.data.infos[0].content);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
