@@ -12,7 +12,7 @@ const About = () => {
   useEffect(() => {
     const fetchdata = async () => {
       try {
-        const res = await axios.get("http://127.0.0.1:8000/api/info/");
+        const res = await axios.get("http://74.50.64.34:8000/api/info/");
         setText(res.data.infos[1].content);
         console.log(res.data.infos[1].content);
       } catch (error) {
