@@ -14,7 +14,7 @@ const Terms = () => {
     const fetchdata = async () => {
       try {
         console.log("dfdf")
-        const res = await axios.get("https://74.50.64.34/api/info/");
+        const res = await axios.get("https://test.sajhaghar.com/api/info/");
         setText(res.data.infos[0].content);
         console.log(res.data.infos[0].content);
       } catch (error) {
