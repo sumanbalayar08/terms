@@ -19,7 +19,9 @@ const Navbar = () => {
         </div>
 
         <ul className="hidden lg:flex items-center justify-center space-x-6 font-bold">
+          <Link to='/'>
           <li className="cursor-pointer hover:text-gray-300">Home</li>
+          </Link>
           <li className="cursor-pointer hover:text-gray-300">Order</li>
           <li className="cursor-pointer hover:text-gray-300">Our Customers</li>
           <Link to='/about'>
@@ -38,8 +40,9 @@ const Navbar = () => {
           }`}
         >
           <hr className="border-black" />
-
-          <li className="flex items-center justify-center">Home</li>
+<Link to='/' className="flex items-center justify-center">
+<li>Home</li>
+</Link>
           <hr className="border-black" />
           <li className="flex items-center justify-center">Order</li>
           <hr className="border-black" />
