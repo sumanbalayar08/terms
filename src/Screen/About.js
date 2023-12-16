@@ -23,7 +23,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="bg-[url('./images/geiranger.jpg')] overflow-hidden bg-cover min-h-screen">
+    <div className="bg-[url('./images/geiranger.jpg')] overflow-hidden bg-cover min-h-screen bg-fixed">
       <Navbar />
       <div className="flex-1 py-[4%] space-y-6">
         <h1 className="flex items-center justify-center text-white font-bold text-2xl">
@@ -37,15 +37,9 @@ const About = () => {
             Close and Go Back
           </button>
         </div>
-        {text ? (
-          <p className="flex items-center justify-center text-black bg-white rounded-2xl mx-[20%] px-8 py-6 font-serif">
-            {text}
-          </p>
-        ) : (
-          <p className="flex items-center justify-center text-black bg-white rounded-2xl mx-[20%] px-8 py-6 font-serif">
-            Server Not Active
-          </p>
-        )}
+        <div className="flex items-center justify-center text-black bg-white rounded-2xl px-10 mx-5 sm:mx-14 md:mx-32 xl:mx-60 py-6 font-serif">
+          {text ? <p>{text}</p> : <p>Server Not Active</p>}
+        </div>
       </div>
     </div>
   );
