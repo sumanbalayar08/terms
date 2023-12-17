@@ -39,7 +39,7 @@ const Terms = () => {
             Close and Go Back
           </button>
         </div>
-        <div className="flex items-center whitespace-pre-line justify-center text-black bg-white rounded-2xl px-10 mx-5 sm:mx-14 md:mx-32 xl:mx-60 py-8 text-center font-serif">
+        <div className="flex items-center whitespace-pre-line justify-center text-black bg-white rounded-2xl px-10 mx-5 sm:mx-14 md:mx-28 xl:mx-60 py-8 text-center font-serif">
           {text ? <p>{text}</p> : <p>Server Not Active</p>}
         </div>
         <div className="flex items-center justify-center font-bold text-lg">
