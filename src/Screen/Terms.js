@@ -25,7 +25,7 @@ const Terms = () => {
   }, []);
 
   return (
-    <div className="bg-[url('./images/geiranger.jpg')] overflow-hidden bg-cover min-h-screen bg-fixed">
+    <div className="bg-[url('./images/geiranger.jpg')] overflow-auto bg-cover min-h-screen sm:bg-auto sm:h-auto">
       <Navbar />
       <div className="flex-1 py-[4%] space-y-6">
         <h1 className="flex items-center justify-center text-white font-bold text-2xl">
