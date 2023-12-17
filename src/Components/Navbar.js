@@ -19,7 +19,7 @@ const Navbar = () => {
         </div>
 
         <div className="block lg:hidden">
-          <GiHamburgerMenu className="scale-150" onClick={toggleMenu}/>
+          <GiHamburgerMenu className="scale-150 cursor-pointer" onClick={toggleMenu}/>
         </div>
 
         <ul className="hidden lg:flex items-center justify-center space-x-6 font-bold">

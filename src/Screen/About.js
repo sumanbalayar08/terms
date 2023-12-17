@@ -23,9 +23,9 @@ const About = () => {
   }, []);
 
   return (
-    <div className="bg-[url('./images/geiranger.jpg')] overflow-auto bg-cover min-h-screen">
-      <Navbar />
-      <div className="flex-1 py-[4%] space-y-6">
+    <div className="bg-[url('./images/geiranger.jpg')] overflow-y-scroll bg-fixed-sm bg-cover h-screen w-screen">
+      <Navbar/>
+      <div className="flex-1 py-[4%] space-y-6 overflow-y-auto">
         <h1 className="flex items-center justify-center text-white font-bold text-2xl">
           About Us
         </h1>
