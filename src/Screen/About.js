@@ -23,7 +23,7 @@ const About = () => {
   }, []);
 
   return (
-    <div  className="bg-[url('./images/geiranger.jpg')]">
+    <div  className="bg-[url('./images/geiranger.jpg')] bg-cover">
       <div className="overflow-auto bg-no-repeat bg-fixed h-screen">
         <Navbar />
         <div className="flex-1 py-[4%] space-y-6 overflow-y-auto">
