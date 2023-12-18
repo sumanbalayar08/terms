@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import axios from "axios";
-import image2 from '../images/geiranger.jpg'
 
 
 const About = () => {
@@ -25,8 +24,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="flex h-screen">
-<div className="bg-[url('./images/geiranger.jpg')] overflow-y-scroll bg-cover w-screen bg-fixed">
+<div className="bg-[url('./images/geiranger.jpg')] overflow-scroll bg-no-repeat bg-fixed h-screen">
   
       <Navbar/>
       <div className="flex-1 py-[4%] space-y-6 overflow-y-auto">
@@ -45,7 +43,6 @@ const About = () => {
           {text ? <p>{text}</p> : <p>Server Not Active</p>}
         </div>
       </div>
-    </div>
     </div>
     
   );
