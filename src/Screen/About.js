@@ -25,8 +25,9 @@ const About = () => {
   }, []);
 
   return (
-    <div className="h-screen">
-<div className="bg-[url('./images/geiranger.jpg')] overflow-y-scroll bg-cover h-full xl:h-screen w-screen">
+    <div className="flex h-screen">
+<div className="bg-[url('./images/geiranger.jpg')] overflow-y-scroll bg-cover w-screen bg-fixed">
+  
       <Navbar/>
       <div className="flex-1 py-[4%] space-y-6 overflow-y-auto">
         <h1 className="flex items-center justify-center text-white font-bold text-2xl">
